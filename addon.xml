@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.mpdclient"
+       name="MPD Client"
+       version="0.0.1"
+       provider-name="SamS (coding_sams@tuta.io)">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="python-musicpd" version="0.7.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+        <source>https://github.com/CodingSamS/kodi-mpd-client</source>
+        <summary lang="en_GB">MPD client</summary>
+        <description lang="en_GB">An MPD Client for Kodi.</description>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
